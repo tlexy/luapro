@@ -58,7 +58,8 @@ message MsgSevenResp
 print("main3.lua for test")
 
 function msg_1311(message)
-	local RecvMsg = Parse(message)
+    ## 将一个C++的protobuf消息转换为lua中的table
+	local RecvMsg = parseProto(message)
 	if RecvMsg == nil then 
 		print("RecvMsg is nil.")
 		return 
