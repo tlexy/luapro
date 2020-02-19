@@ -26,6 +26,19 @@ addCFunction("add", add, L);
 ```
 
 ### 导出C变量及常量
+```c++
+//变量
+int var_i = 0;
+expVar("var_name", &var_i, L);
+
+//常量的值
+enum elua_err
+{
+    lua_err_1,
+    lua_err_2
+}
+expConstant("cons_name", lua_err_1);
+```
 
 ### 导出C++类及方法
 ```c++
@@ -39,6 +52,13 @@ addFunction("class_func", Test, add, L);
 
 ```
 ### 导出类变量及常量
+
+>一个好的设计不应该导出类变量及常量
+
+### C++调用lua函数
+```c++
+callLuaFunction("lua_func_name", para1, para2, para3, L);
+```
 
 ### 将一个protobuf消息类转换为lua中的table
 ```
@@ -54,11 +74,11 @@ message MsgSevenResp
 
 ```
 ```lua
-//lua文件 test1.lua
-print("main3.lua for test")
+-- lua文件 test1.lua
+print("test1.lua for test")
 
 function msg_1311(message)
-    ## 将一个C++的protobuf消息转换为lua中的table
+    -- 将一个C++的protobuf消息转换为lua中的table
 	local RecvMsg = parseProto(message)
 	if RecvMsg == nil then 
 		print("RecvMsg is nil.")
@@ -88,6 +108,7 @@ int flag = proLoadLua("test1.lua");
 if (flag != 0)
 {
     proPrintLuaErr();//打印lua出错信息
+    proClose(L)
 }
 //调用lua函数
 callLuaFunction("msg_1311", &resp, L);
