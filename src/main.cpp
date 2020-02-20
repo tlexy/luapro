@@ -28,12 +28,14 @@ int main()
 	expVal("name", "protobuf", lvm);
     expVal("FIRE", think, lvm);
 
-	//getGlobalNamespace(lvm->L)
-	//	.beginClass<AnimalDuck>("Duck")
-	//	.addConstructor<void(*)(int)>()
-	//	.addFunction("aprint", &AnimalDuck::print)
-	//	.addStaticFunction("aname", &AnimalDuck::name)
-	//	.endClass();
+	regClass(AnimalDuck, lvm);
+
+	/*getGlobalNamespace(lvm->L)
+		.beginClass<AnimalDuck>("Duck")
+		.addConstructor<void(*)(int)>()
+		.addStaticFunction("abaname", &AnimalDuck::name)
+		.addFunction("aprint", &AnimalDuck::print)
+		.endClass();*/
 
 	//getGlobalNamespace(lvm->L)
 	//	.beginClass <A>("A")
@@ -43,10 +45,10 @@ int main()
 	//	.addFunction("virtualFunc", &A::virtualFunc)
 	//	.addFunction("__tostring", &A::toString)     // Metamethod
 	//	.endClass();
-	regClass(AnimalDuck);
-	//expClass(AnimalDuck, "Duck", void(*)(int));
-	//expClassFunction(AnimalDuck, "Duck", print, "aprint");
-	//expClassSFunction(AnimalDuck, "Duck", name, "name");
+	//regClass(AnimalDuck);
+	expClass(AnimalDuck, "Duck", void(*)(int), lvm);
+	expClassFunction(AnimalDuck, "Duck", print, "aprint", lvm);
+	expClassSFunction(AnimalDuck, "Duck", name, "abaname", lvm);
 
     expCFunction("zname", sname, lvm);
 	expCFunction("add", add, lvm);

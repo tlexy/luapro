@@ -22,19 +22,19 @@ bool proLoadLuaFile(Lua* lua, const char* file);
     getGlobalNamespace(lvm->L).addFunction(name, func)
 
 //注册类1
-#define regClass(cls) \
+#define regClass(cls, lvm) \
 	getGlobalNamespace(lvm->L).beginClass<cls>(#cls).endClass();
 
 //注册类2
-#define expClass(cls, name, ctor) \
+#define expClass(cls, name, ctor, lvm) \
 	getGlobalNamespace(lvm->L).beginClass<cls>(name).addConstructor<ctor>().endClass();
 
 //导出一般类方法
-#define expClassFunction(cls, name, func, func_alias) \
+#define expClassFunction(cls, name, func, func_alias, lvm) \
 	getGlobalNamespace(lvm->L).beginClass<cls>(name).addFunction(func_alias, &cls::func).endClass();
 
 //导出静态类方法
-#define expClassSFunction(cls, name, func, func_alias) \
+#define expClassSFunction(cls, name, func, func_alias, lvm) \
 	getGlobalNamespace(lvm->L).beginClass<cls>(name).addStaticFunction(func_alias, &cls::func).endClass();
 
 void luaPush(Lua* L, int val);

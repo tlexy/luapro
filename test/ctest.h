@@ -43,10 +43,11 @@ public:
         std::cout << "I\' a  duck, my age is " << _age << std::endl;
     }
 
-	static char name()
+	static void name()
 	{
 		//return std::string("manli");
-		return 'a';
+		//return 'a';
+		std::cout << "static function name..." << std::endl;
 	}
 
 private:
