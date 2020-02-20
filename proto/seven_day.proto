@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+package fluyii_game;
+
+message MsgInt64List
+{
+	repeated int64 ids = 1;
+}
+
+message MsgPlayer
+{
+	required int64 player_id = 1;
+	required string player_name = 2;
+}
+
+message MsgFriend
+{
+	required int32 friend_intimate = 1;
+	required int32 lv = 2;
+}
+
+message MsgSevenResp
+{
+	required int32 player_id = 1;
+	required string player_name = 2; 
+	repeated int32 records = 3;
+	repeated MsgPlayer others = 4;
+	required MsgFriend friend = 5;
+	required double money = 6;
+}
+

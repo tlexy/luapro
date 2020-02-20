@@ -7,8 +7,6 @@
 
 ### 通用
 ```c++
-#define L lvm //定义一个宏，方便使用
-
 //新建一个lua虚拟机
 Lua lvm = proCreate();
 
@@ -22,14 +20,14 @@ int add(int a, int b)
     return a + b;
 }
 //导出
-addCFunction("add", add, L);
+addCFunction("add", add, lvm);
 ```
 
 ### 导出C变量及常量
 ```c++
 //变量
 int var_i = 0;
-expVar("var_name", &var_i, L);
+expVal("var_name", var_i, lvm);
 
 //常量的值
 enum elua_err
@@ -37,7 +35,7 @@ enum elua_err
     lua_err_1,
     lua_err_2
 }
-expConstant("cons_name", lua_err_1);
+expVal("cons_name", lua_err_1, Lvm);
 ```
 
 ### 导出C++类及方法
