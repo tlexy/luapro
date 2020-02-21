@@ -8,7 +8,7 @@
 ### 通用
 ```c++
 //新建一个lua虚拟机
-Lua lvm = proCreate();
+Lua* lvm = proCreate();
 
 //结束一个lua虚拟机
 proClose(lvm);
