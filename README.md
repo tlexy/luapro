@@ -80,8 +80,21 @@ expClassFunction(AnimalDuck, "Duck", name, "aname", lvm);//lua中调用：Duck.a
 >一个好的设计不应该导出类变量及常量
 
 ### C++调用lua函数
+```lua
+--lua文件
+function msg_1314(a, b, c, du)
+    print(a, b, c)
+    du:print();
+    return a + 19;
+end
+```
 ```c++
-callLuaFunction("lua_func_name", para1, para2, para3, L);
+expClassFunction2(AnimalDuck, print, lvm); //注册AnimalDuck类及print方法
+AnimalDuck du;//
+
+//通过callLuaStdFunction调用lua函数时，所传递的自定义数据结构（类及结构体）必须要先注册
+LuaRef ret = callLuaStdFunction("msg_1314", lvm, 1314, "msg", false, &du, L);
+std::cout << "lua func return " << ret.cast<int>() << std::endl;
 ```
 
 ### 将一个protobuf消息类转换为lua中的table
@@ -134,8 +147,18 @@ if (flag != 0)
     proPrintLuaErr();//打印lua出错信息
     proClose(L)
 }
+
+//为protobuf到lua的转换函数起一个名字，这个操作只需要一次即可
+expProtobufToLuaFunction("ParseProto", lvm);
+
 //调用lua函数
-callLuaFunction("msg_1311", &resp, L);
+callLuaProtoFunction("msg_1311", &resp, lvm);
 
 ```
 ### 将一个lua中的table转换为protobuf消息类
+
+### C++调用lua函数（混合参数版本）
+>混合参数指的是：C++传递到lua函数中的某些自定义数据结构并没有注册
+>上面的例子中，类MsgSevenResp并没有注册，而类AnimalDuck已经注册过了，
+>如果lua函数中有MsgSevenResp类对象和AnimalDuck类对象作为参数时，
+>这时，为了调用的正确性，不能直接调用callLuaStdFunction来调用lua函数
