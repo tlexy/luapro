@@ -141,12 +141,7 @@ for (int i = 0; i < 10; ++i)
 	resp.add_records(i);
 }
 
-int flag = proLoadLua("test1.lua");
-if (flag != 0)
-{
-    proPrintLuaErr();//打印lua出错信息
-    proClose(L)
-}
+proLoadLuaFile(lvm, "test1.lua");
 
 //为protobuf到lua的转换函数起一个名字，这个操作只需要一次即可
 expProtobufToLuaFunction("ParseProto", lvm);
@@ -156,6 +151,32 @@ callLuaProtoFunction("msg_1311", &resp, lvm);
 
 ```
 ### 将一个lua中的table转换为protobuf消息类
+```
+syntax = "proto2";
+
+message MsgPlayer
+{
+	required int64 player_id = 1;
+	required string player_name = 2;
+}
+```
+
+```lua
+--lua代码
+function msg_lua()
+    local send = {}
+	send.player_id = 78654
+	send.player_name = "aabbc"
+	parseLuaToProto("MsgPlayer", send)
+end
+```
+```C++
+//C++代码
+//为lua到protobuf的转换函数起一个名字，这个操作只需要一次即可
+expLuaToProtobufFunction("parseLuaToProto", lvm);
+//加载lua文件后调用
+callLuaStdFunction("msg_lua", lvm);
+```
 
 ### C++调用lua函数（混合参数版本）
 >混合参数指的是：C++传递到lua函数中的某些自定义数据结构并没有注册。

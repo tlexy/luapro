@@ -60,6 +60,10 @@ LuaRef callLuaStdFunction(const char* name, Lua* lua,  Args...args)
 	lua_pushcfunction(lvm->L, protobuf_to_lua); \
 	lua_setglobal(lvm->L, func_name);
 
+#define expLuaToProtobufFunction(func_name, lvm) \
+	lua_pushcfunction(lvm->L, lua_to_protobuf); \
+	lua_setglobal(lvm->L, func_name);
+
 #define callLuaProtoFunction(name, proto_ptr, lvm) \
 	lua_getglobal(lvm->L, name); \
 	lua_pushlightuserdata(lvm->L, proto_ptr); \

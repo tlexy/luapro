@@ -48,6 +48,9 @@ int main()
 	//为protobuf到lua的转换函数起一个名字，这个操作只需要一次即可
 	expProtobufToLuaFunction("ParseProto", lvm);
 
+	//为lua到protobuf的转换函数起一个名字，这个操作只需要一次即可
+	expLuaToProtobufFunction("parseLuaToProto", lvm);
+
 	MsgPlayer player;
 	player.set_player_id(89898);
 	player.set_player_name("protobuf ot test");
@@ -59,10 +62,11 @@ int main()
 	//LuaRef ret = callLuaStdFunction("msg_1314", lvm, 1414, "msg", false, &du);// func(1314, "msg");
 	//std::cout << "lua func return " << ret.cast<int>() << std::endl;
 
-	callLuaProtoFunction("msg_par", &player, lvm);
+	//callLuaProtoFunction("msg_par", &player, lvm);
+    callLuaStdFunction("msg_lua", lvm);
 
-	player.set_player_name("complex test");
-	ComplexTest("msg_complex1", &du, &player, 876, lvm);
+	//player.set_player_name("complex test");
+	//ComplexTest("msg_complex1", &du, &player, 876, lvm);
 
     std::cin.get();
 

@@ -1,13 +1,8 @@
 ﻿#include "lua_helper.h"
 //#include "proto/seven_day.pb.h"
 
-std::map<int, std::string> lua_helper::proto_map;
 
-lua_helper::lua_helper()
-{
-}
-
-void lua_helper::traverse_message(const google::protobuf::Message* msg)
+void traverse_message(const google::protobuf::Message* msg)
 {
 	if (!msg)
 	{
@@ -72,7 +67,7 @@ void lua_helper::traverse_message(const google::protobuf::Message* msg)
 	}
 }
 
-google::protobuf::Message* lua_helper::create_message(const char* type_name)
+google::protobuf::Message* create_message(const char* type_name)
 {
 	google::protobuf::Message* message = NULL;
 
@@ -88,7 +83,7 @@ google::protobuf::Message* lua_helper::create_message(const char* type_name)
 	return message;
 }
 
-void lua_helper::fill_lua_table(lua_State* L, int idx, google::protobuf::Message* msg)
+void fill_lua_table(lua_State* L, int idx, google::protobuf::Message* msg)
 {
 	/// 作副本压栈。
 	lua_pushvalue(L, idx);
@@ -117,6 +112,21 @@ void lua_helper::fill_lua_table(lua_State* L, int idx, google::protobuf::Message
 				case google::protobuf::FieldDescriptor::CppType::CPPTYPE_INT64:
 					ref->AddInt64(msg, fd, lua_tointeger(L, -1));
 					break;
+				case google::protobuf::FieldDescriptor::CppType::CPPTYPE_UINT32:
+					ref->AddUInt32(msg, fd, lua_tointeger(L, -1));
+					break;
+				case google::protobuf::FieldDescriptor::CppType::CPPTYPE_UINT64:
+					ref->AddUInt64(msg, fd, lua_tointeger(L, -1));
+					break;
+				case google::protobuf::FieldDescriptor::CppType::CPPTYPE_DOUBLE:
+					ref->AddDouble(msg, fd, lua_tonumber(L, -1));
+					break;
+				case google::protobuf::FieldDescriptor::CppType::CPPTYPE_FLOAT:
+					ref->AddFloat(msg, fd, lua_tonumber(L, -1));
+					break;
+				case google::protobuf::FieldDescriptor::CppType::CPPTYPE_BOOL:
+					ref->AddBool(msg, fd, lua_toboolean(L, -1));
+					break;
 				case google::protobuf::FieldDescriptor::CppType::CPPTYPE_STRING:
 					ref->AddString(msg, fd, lua_tostring(L, -1));
 					break;
@@ -144,15 +154,26 @@ void lua_helper::fill_lua_table(lua_State* L, int idx, google::protobuf::Message
 		case google::protobuf::FieldDescriptor::CppType::CPPTYPE_INT64:
 			ref->SetInt64(msg, fd, lua_tointeger(L, -1));
 			break;
-		case google::protobuf::FieldDescriptor::CppType::CPPTYPE_STRING:
-			ref->SetString(msg, fd, lua_tostring(L, -1));
+		case google::protobuf::FieldDescriptor::CppType::CPPTYPE_UINT32:
+			ref->AddUInt32(msg, fd, lua_tointeger(L, -1));
+			break;
+		case google::protobuf::FieldDescriptor::CppType::CPPTYPE_UINT64:
+			ref->AddUInt64(msg, fd, lua_tointeger(L, -1));
 			break;
 		case google::protobuf::FieldDescriptor::CppType::CPPTYPE_DOUBLE:
 			ref->SetDouble(msg, fd, lua_tonumber(L, -1));
 			break;
+		case google::protobuf::FieldDescriptor::CppType::CPPTYPE_FLOAT:
+			ref->SetFloat(msg, fd, lua_tonumber(L, -1));
+			break;
+		case google::protobuf::FieldDescriptor::CppType::CPPTYPE_BOOL:
+			ref->SetBool(msg, fd, lua_toboolean(L, -1));
+			break;
+		case google::protobuf::FieldDescriptor::CppType::CPPTYPE_STRING:
+			ref->SetString(msg, fd, lua_tostring(L, -1));
+			break;
 		case google::protobuf::FieldDescriptor::CppType::CPPTYPE_MESSAGE:
 		{
-			//google::protobuf::Message* sub_msg = ref->AddMessage(msg, fd);
 			google::protobuf::Message* sub_msg = ref->MutableMessage(msg, fd);
 			fill_lua_table(L, -1, sub_msg);
 		}
@@ -165,35 +186,25 @@ void lua_helper::fill_lua_table(lua_State* L, int idx, google::protobuf::Message
 	lua_pop(L, 1);
 }
 
-void lua_helper::reg_proto(int proto, const std::string& name)
+int lua_to_protobuf(lua_State* L)
 {
-	proto_map[proto] = name;
-}
-
-int lua_helper::lua_to_protobuf(lua_State* L)
-{
-	int proto = luaL_checkinteger(L, 1);
+	const char* name = luaL_checkstring(L, 1);
 	int type = lua_type(L, 2);
 	if (LUA_TTABLE != type)
 	{
 		//这里要报错
 		return 0;
 	}
-
-	if (proto_map.find(proto) == proto_map.end())
-	{
-		return 0;
-	}
-	std::string name = proto_map[proto];
-	google::protobuf::Message* msg = lua_helper::create_message(name.c_str());
+	
+	google::protobuf::Message* msg = create_message(name);
 	if (msg == NULL)
 	{
 		//找不到协议定义
 		return 0;
 	}
 	fill_lua_table(L, 2, msg);
-	lua_helper::traverse_message(msg);
-	return 0;
+	traverse_message(msg);
+	return 1;
 }
 
 void protobuf_new_table(lua_State* L, const google::protobuf::Message* msg)
@@ -417,6 +428,3 @@ void stackDump(lua_State *l)
 	printf("------end----\n");
 }
 
-lua_helper::~lua_helper()
-{
-}

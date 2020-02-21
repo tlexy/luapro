@@ -22,6 +22,14 @@ function msg_par(proto)
 	local msg = ParseProto(proto)
 	print("terst")
 	print(222, msg.player_id, msg.player_name)
+
+end
+
+function msg_lua()
+    local send = {}
+	send.player_id = 78654
+	send.player_name = "aabbc"
+	parseLuaToProto("MsgPlayer", send)
 end
 
 function msg_complex1(d, iit, proto)
