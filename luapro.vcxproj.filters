@@ -14,6 +14,9 @@
     <Filter Include="test">
       <UniqueIdentifier>{57408b97-fd6e-441c-b1ae-b811ae313bb5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="proto">
+      <UniqueIdentifier>{7631d82d-3351-4de3-93c9-186159d309ea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3rd\lua5_3_5\lapi.c">
@@ -121,6 +124,12 @@
     <ClCompile Include="src\luaprop.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\lua_helper.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="proto\seven_day.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="3rd\lua5_3_5\lapi.h">
@@ -207,10 +216,17 @@
     <ClInclude Include="test\ctest.h">
       <Filter>test</Filter>
     </ClInclude>
+    <ClInclude Include="src\lua_helper.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="proto\seven_day.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="3rd\lua5_3_5\Makefile">
       <Filter>3rd\lua5_3_5</Filter>
     </None>
+    <None Include="base_test.lua" />
   </ItemGroup>
 </Project>

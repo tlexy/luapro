@@ -45,8 +45,6 @@ public:
 
 	static void name()
 	{
-		//return std::string("manli");
-		//return 'a';
 		std::cout << "static function name..." << std::endl;
 	}
 

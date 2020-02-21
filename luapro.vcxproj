@@ -75,6 +75,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>3rd\protobuf;3rd\LuaBridge;3rd\lua5_3_5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -95,6 +96,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -148,7 +150,9 @@
     <ClCompile Include="3rd\lua5_3_5\lutf8lib.c" />
     <ClCompile Include="3rd\lua5_3_5\lvm.c" />
     <ClCompile Include="3rd\lua5_3_5\lzio.c" />
+    <ClCompile Include="proto\seven_day.pb.cc" />
     <ClCompile Include="src\luaprop.cpp" />
+    <ClCompile Include="src\lua_helper.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -178,11 +182,14 @@
     <ClInclude Include="3rd\lua5_3_5\lundump.h" />
     <ClInclude Include="3rd\lua5_3_5\lvm.h" />
     <ClInclude Include="3rd\lua5_3_5\lzio.h" />
+    <ClInclude Include="proto\seven_day.pb.h" />
     <ClInclude Include="src\luaprop.h" />
+    <ClInclude Include="src\lua_helper.h" />
     <ClInclude Include="test\ctest.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="3rd\lua5_3_5\Makefile" />
+    <None Include="base_test.lua" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

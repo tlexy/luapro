@@ -20,7 +20,7 @@ int add(int a, int b)
     return a + b;
 }
 //导出
-addCFunction("add", add, lvm);
+expCFunction("add", add, lvm);
 ```
 
 ### 导出C变量及常量
@@ -40,13 +40,39 @@ expVal("cons_name", lua_err_1, Lvm);
 
 ### 导出C++类及方法
 ```c++
-class Test
+class AnimalDuck
 {
 public:
-    int add(int, int);
+    AnimalDuck()
+    {}
+    AnimalDuck(int age)
+        :_age(age)
+    {}
+
+    void print()
+    {
+        std::cout << "I\' a  duck, my age is " << _age << std::endl;
+    }
+
+	static void name()
+	{
+		std::cout << "static function name..." << std::endl;
+	}
+
+private:
+    int _age;
 };
-//导出
-addFunction("class_func", Test, add, L);
+//单纯地导出一个类(如果不导出这个类的情况下，lua调用C++函数时有用到这个类对象指针时，程序会出错)
+regClass(AnimalDuck, lvm);
+
+//导出类的同时，导出其构造函数
+expClass(AnimalDuck, "Duck", void(*)(int), lvm);//可以在lua中这样创建一个Duck对象：local d = Duck(888)
+
+//导出类对象方法
+expClassFunction(AnimalDuck, "Duck", print, "aprint", lvm);//lua中调用：d:aprint()
+
+//导出类静态方法
+expClassFunction(AnimalDuck, "Duck", name, "aname", lvm);//lua中调用：Duck.aname()
 
 ```
 ### 导出类变量及常量

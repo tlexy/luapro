@@ -10,8 +10,6 @@ typedef struct _Lua
     lua_State* L;
 }Lua;
 
-static int g_init = 1;
-
 Lua* proCreate();
 
 void proClose(Lua* lua);
@@ -44,35 +42,6 @@ bool proLoadLuaFile(Lua* lua, const char* file);
 //导出静态类方法
 #define expClassSFunction(cls, name, func, func_alias, lvm) \
 	getGlobalNamespace(lvm->L).beginClass<cls>(name).addStaticFunction(func_alias, &cls::func).endClass();
-
-#define expClassSFunction2(cls, func, lvm) \
-	expClassSFunction(cls, #cls, func, #func, lvm)
-
-//调用lua函数（标准）
-template<typename... Args>
-LuaRef callLuaStdFunction(const char* name, Lua* lua,  Args...args)
-{
-	LuaRef func = luabridge::getGlobal(lua->L, name);
-	return func(args...);
-}
-
-#define expProtobufToLuaFunction(func_name, lvm) \
-	lua_pushcfunction(lvm->L, protobuf_to_lua); \
-	lua_setglobal(lvm->L, func_name);
-
-#define callLuaProtoFunction(name, proto_ptr, lvm) \
-	lua_getglobal(lvm->L, name); \
-	lua_pushlightuserdata(lvm->L, proto_ptr); \
-	lua_pcall(lvm->L, 1, 0, 0);
-
-//#define regComplexFunction()
-#define ComplexTest(name, Duck, Message, iit, lvm) \
-	lua_getglobal(lvm->L, name); \
-	luabridge::push(lvm->L, Duck); \
-	luabridge::push(lvm->L, iit); \
-	lua_pushlightuserdata(lvm->L, Message); \
-	lua_pcall(lvm->L, 3, 0, 0);
-
 
 void luaPush(Lua* L, int val);
 

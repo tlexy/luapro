@@ -16,7 +16,6 @@
 #include <google/protobuf/port_def.inc>
 extern PROTOBUF_INTERNAL_EXPORT_seven_5fday_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgFriend_seven_5fday_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_seven_5fday_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgPlayer_seven_5fday_2eproto;
-namespace fluyii_game {
 class MsgInt64ListDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgInt64List> _instance;
@@ -33,16 +32,15 @@ class MsgSevenRespDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgSevenResp> _instance;
 } _MsgSevenResp_default_instance_;
-}  // namespace fluyii_game
 static void InitDefaultsscc_info_MsgFriend_seven_5fday_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::fluyii_game::_MsgFriend_default_instance_;
-    new (ptr) ::fluyii_game::MsgFriend();
+    void* ptr = &::_MsgFriend_default_instance_;
+    new (ptr) ::MsgFriend();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::fluyii_game::MsgFriend::InitAsDefaultInstance();
+  ::MsgFriend::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgFriend_seven_5fday_2eproto =
@@ -52,11 +50,11 @@ static void InitDefaultsscc_info_MsgInt64List_seven_5fday_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::fluyii_game::_MsgInt64List_default_instance_;
-    new (ptr) ::fluyii_game::MsgInt64List();
+    void* ptr = &::_MsgInt64List_default_instance_;
+    new (ptr) ::MsgInt64List();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::fluyii_game::MsgInt64List::InitAsDefaultInstance();
+  ::MsgInt64List::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgInt64List_seven_5fday_2eproto =
@@ -66,11 +64,11 @@ static void InitDefaultsscc_info_MsgPlayer_seven_5fday_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::fluyii_game::_MsgPlayer_default_instance_;
-    new (ptr) ::fluyii_game::MsgPlayer();
+    void* ptr = &::_MsgPlayer_default_instance_;
+    new (ptr) ::MsgPlayer();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::fluyii_game::MsgPlayer::InitAsDefaultInstance();
+  ::MsgPlayer::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgPlayer_seven_5fday_2eproto =
@@ -80,11 +78,11 @@ static void InitDefaultsscc_info_MsgSevenResp_seven_5fday_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::fluyii_game::_MsgSevenResp_default_instance_;
-    new (ptr) ::fluyii_game::MsgSevenResp();
+    void* ptr = &::_MsgSevenResp_default_instance_;
+    new (ptr) ::MsgSevenResp();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::fluyii_game::MsgSevenResp::InitAsDefaultInstance();
+  ::MsgSevenResp::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_MsgSevenResp_seven_5fday_2eproto =
@@ -97,42 +95,42 @@ static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_seven_5fday_2eproto = nullptr;
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_seven_5fday_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgInt64List, _has_bits_),
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgInt64List, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::MsgInt64List, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::MsgInt64List, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgInt64List, ids_),
+  PROTOBUF_FIELD_OFFSET(::MsgInt64List, ids_),
   ~0u,
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgPlayer, _has_bits_),
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgPlayer, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::MsgPlayer, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::MsgPlayer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgPlayer, player_id_),
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgPlayer, player_name_),
+  PROTOBUF_FIELD_OFFSET(::MsgPlayer, player_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgPlayer, player_name_),
   1,
   0,
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgFriend, _has_bits_),
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgFriend, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::MsgFriend, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::MsgFriend, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgFriend, friend_intimate_),
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgFriend, lv_),
+  PROTOBUF_FIELD_OFFSET(::MsgFriend, friend_intimate_),
+  PROTOBUF_FIELD_OFFSET(::MsgFriend, lv_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgSevenResp, _has_bits_),
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgSevenResp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::MsgSevenResp, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::MsgSevenResp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgSevenResp, player_id_),
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgSevenResp, player_name_),
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgSevenResp, records_),
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgSevenResp, others_),
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgSevenResp, friend__),
-  PROTOBUF_FIELD_OFFSET(::fluyii_game::MsgSevenResp, money_),
+  PROTOBUF_FIELD_OFFSET(::MsgSevenResp, player_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgSevenResp, player_name_),
+  PROTOBUF_FIELD_OFFSET(::MsgSevenResp, records_),
+  PROTOBUF_FIELD_OFFSET(::MsgSevenResp, others_),
+  PROTOBUF_FIELD_OFFSET(::MsgSevenResp, friend__),
+  PROTOBUF_FIELD_OFFSET(::MsgSevenResp, money_),
   3,
   0,
   ~0u,
@@ -141,29 +139,28 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_seven_5fday_2eproto::offsets[]
   2,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 6, sizeof(::fluyii_game::MsgInt64List)},
-  { 7, 14, sizeof(::fluyii_game::MsgPlayer)},
-  { 16, 23, sizeof(::fluyii_game::MsgFriend)},
-  { 25, 36, sizeof(::fluyii_game::MsgSevenResp)},
+  { 0, 6, sizeof(::MsgInt64List)},
+  { 7, 14, sizeof(::MsgPlayer)},
+  { 16, 23, sizeof(::MsgFriend)},
+  { 25, 36, sizeof(::MsgSevenResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::fluyii_game::_MsgInt64List_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::fluyii_game::_MsgPlayer_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::fluyii_game::_MsgFriend_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::fluyii_game::_MsgSevenResp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgInt64List_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPlayer_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgFriend_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgSevenResp_default_instance_),
 };
 
 const char descriptor_table_protodef_seven_5fday_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\017seven_day.proto\022\013fluyii_game\"\033\n\014MsgInt"
-  "64List\022\013\n\003ids\030\001 \003(\003\"3\n\tMsgPlayer\022\021\n\tplay"
-  "er_id\030\001 \002(\003\022\023\n\013player_name\030\002 \002(\t\"0\n\tMsgF"
-  "riend\022\027\n\017friend_intimate\030\001 \002(\005\022\n\n\002lv\030\002 \002"
-  "(\005\"\246\001\n\014MsgSevenResp\022\021\n\tplayer_id\030\001 \002(\005\022\023"
-  "\n\013player_name\030\002 \002(\t\022\017\n\007records\030\003 \003(\005\022&\n\006"
-  "others\030\004 \003(\0132\026.fluyii_game.MsgPlayer\022&\n\006"
-  "friend\030\005 \002(\0132\026.fluyii_game.MsgFriend\022\r\n\005"
-  "money\030\006 \002(\001"
+  "\n\017seven_day.proto\"\033\n\014MsgInt64List\022\013\n\003ids"
+  "\030\001 \003(\003\"3\n\tMsgPlayer\022\021\n\tplayer_id\030\001 \002(\003\022\023"
+  "\n\013player_name\030\002 \002(\t\"0\n\tMsgFriend\022\027\n\017frie"
+  "nd_intimate\030\001 \002(\005\022\n\n\002lv\030\002 \002(\005\"\216\001\n\014MsgSev"
+  "enResp\022\021\n\tplayer_id\030\001 \002(\005\022\023\n\013player_name"
+  "\030\002 \002(\t\022\017\n\007records\030\003 \003(\005\022\032\n\006others\030\004 \003(\0132"
+  "\n.MsgPlayer\022\032\n\006friend\030\005 \002(\0132\n.MsgFriend\022"
+  "\r\n\005money\030\006 \002(\001"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_seven_5fday_2eproto_deps[1] = {
 };
@@ -176,7 +173,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_sev
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_seven_5fday_2eproto_once;
 static bool descriptor_table_seven_5fday_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_seven_5fday_2eproto = {
-  &descriptor_table_seven_5fday_2eproto_initialized, descriptor_table_protodef_seven_5fday_2eproto, "seven_day.proto", 331,
+  &descriptor_table_seven_5fday_2eproto_initialized, descriptor_table_protodef_seven_5fday_2eproto, "seven_day.proto", 294,
   &descriptor_table_seven_5fday_2eproto_once, descriptor_table_seven_5fday_2eproto_sccs, descriptor_table_seven_5fday_2eproto_deps, 4, 0,
   schemas, file_default_instances, TableStruct_seven_5fday_2eproto::offsets,
   file_level_metadata_seven_5fday_2eproto, 4, file_level_enum_descriptors_seven_5fday_2eproto, file_level_service_descriptors_seven_5fday_2eproto,
@@ -184,7 +181,6 @@ const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_seven_
 
 // Force running AddDescriptors() at dynamic initialization time.
 static bool dynamic_init_dummy_seven_5fday_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_seven_5fday_2eproto), true);
-namespace fluyii_game {
 
 // ===================================================================
 
@@ -198,7 +194,7 @@ class MsgInt64List::_Internal {
 MsgInt64List::MsgInt64List()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:fluyii_game.MsgInt64List)
+  // @@protoc_insertion_point(constructor:MsgInt64List)
 }
 MsgInt64List::MsgInt64List(const MsgInt64List& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -206,14 +202,14 @@ MsgInt64List::MsgInt64List(const MsgInt64List& from)
       _has_bits_(from._has_bits_),
       ids_(from.ids_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:fluyii_game.MsgInt64List)
+  // @@protoc_insertion_point(copy_constructor:MsgInt64List)
 }
 
 void MsgInt64List::SharedCtor() {
 }
 
 MsgInt64List::~MsgInt64List() {
-  // @@protoc_insertion_point(destructor:fluyii_game.MsgInt64List)
+  // @@protoc_insertion_point(destructor:MsgInt64List)
   SharedDtor();
 }
 
@@ -230,7 +226,7 @@ const MsgInt64List& MsgInt64List::default_instance() {
 
 
 void MsgInt64List::Clear() {
-// @@protoc_insertion_point(message_clear_start:fluyii_game.MsgInt64List)
+// @@protoc_insertion_point(message_clear_start:MsgInt64List)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -284,7 +280,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* MsgInt64List::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fluyii_game.MsgInt64List)
+  // @@protoc_insertion_point(serialize_to_array_start:MsgInt64List)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -298,12 +294,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fluyii_game.MsgInt64List)
+  // @@protoc_insertion_point(serialize_to_array_end:MsgInt64List)
   return target;
 }
 
 size_t MsgInt64List::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fluyii_game.MsgInt64List)
+// @@protoc_insertion_point(message_byte_size_start:MsgInt64List)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -329,22 +325,22 @@ size_t MsgInt64List::ByteSizeLong() const {
 }
 
 void MsgInt64List::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:fluyii_game.MsgInt64List)
+// @@protoc_insertion_point(generalized_merge_from_start:MsgInt64List)
   GOOGLE_DCHECK_NE(&from, this);
   const MsgInt64List* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgInt64List>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:fluyii_game.MsgInt64List)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgInt64List)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:fluyii_game.MsgInt64List)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgInt64List)
     MergeFrom(*source);
   }
 }
 
 void MsgInt64List::MergeFrom(const MsgInt64List& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:fluyii_game.MsgInt64List)
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgInt64List)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -354,14 +350,14 @@ void MsgInt64List::MergeFrom(const MsgInt64List& from) {
 }
 
 void MsgInt64List::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:fluyii_game.MsgInt64List)
+// @@protoc_insertion_point(generalized_copy_from_start:MsgInt64List)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MsgInt64List::CopyFrom(const MsgInt64List& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fluyii_game.MsgInt64List)
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgInt64List)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -401,7 +397,7 @@ class MsgPlayer::_Internal {
 MsgPlayer::MsgPlayer()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:fluyii_game.MsgPlayer)
+  // @@protoc_insertion_point(constructor:MsgPlayer)
 }
 MsgPlayer::MsgPlayer(const MsgPlayer& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -413,7 +409,7 @@ MsgPlayer::MsgPlayer(const MsgPlayer& from)
     player_name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.player_name_);
   }
   player_id_ = from.player_id_;
-  // @@protoc_insertion_point(copy_constructor:fluyii_game.MsgPlayer)
+  // @@protoc_insertion_point(copy_constructor:MsgPlayer)
 }
 
 void MsgPlayer::SharedCtor() {
@@ -423,7 +419,7 @@ void MsgPlayer::SharedCtor() {
 }
 
 MsgPlayer::~MsgPlayer() {
-  // @@protoc_insertion_point(destructor:fluyii_game.MsgPlayer)
+  // @@protoc_insertion_point(destructor:MsgPlayer)
   SharedDtor();
 }
 
@@ -441,7 +437,7 @@ const MsgPlayer& MsgPlayer::default_instance() {
 
 
 void MsgPlayer::Clear() {
-// @@protoc_insertion_point(message_clear_start:fluyii_game.MsgPlayer)
+// @@protoc_insertion_point(message_clear_start:MsgPlayer)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -474,7 +470,7 @@ const char* MsgPlayer::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       // required string player_name = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(_internal_mutable_player_name(), ptr, ctx, "fluyii_game.MsgPlayer.player_name");
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(_internal_mutable_player_name(), ptr, ctx, "MsgPlayer.player_name");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -501,7 +497,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* MsgPlayer::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fluyii_game.MsgPlayer)
+  // @@protoc_insertion_point(serialize_to_array_start:MsgPlayer)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -517,7 +513,7 @@ failure:
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
       this->_internal_player_name().data(), static_cast<int>(this->_internal_player_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "fluyii_game.MsgPlayer.player_name");
+      "MsgPlayer.player_name");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_player_name(), target);
   }
@@ -526,12 +522,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fluyii_game.MsgPlayer)
+  // @@protoc_insertion_point(serialize_to_array_end:MsgPlayer)
   return target;
 }
 
 size_t MsgPlayer::RequiredFieldsByteSizeFallback() const {
-// @@protoc_insertion_point(required_fields_byte_size_fallback_start:fluyii_game.MsgPlayer)
+// @@protoc_insertion_point(required_fields_byte_size_fallback_start:MsgPlayer)
   size_t total_size = 0;
 
   if (has_player_name()) {
@@ -551,7 +547,7 @@ size_t MsgPlayer::RequiredFieldsByteSizeFallback() const {
   return total_size;
 }
 size_t MsgPlayer::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fluyii_game.MsgPlayer)
+// @@protoc_insertion_point(message_byte_size_start:MsgPlayer)
   size_t total_size = 0;
 
   if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
@@ -582,22 +578,22 @@ size_t MsgPlayer::ByteSizeLong() const {
 }
 
 void MsgPlayer::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:fluyii_game.MsgPlayer)
+// @@protoc_insertion_point(generalized_merge_from_start:MsgPlayer)
   GOOGLE_DCHECK_NE(&from, this);
   const MsgPlayer* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgPlayer>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:fluyii_game.MsgPlayer)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgPlayer)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:fluyii_game.MsgPlayer)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgPlayer)
     MergeFrom(*source);
   }
 }
 
 void MsgPlayer::MergeFrom(const MsgPlayer& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:fluyii_game.MsgPlayer)
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgPlayer)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -617,14 +613,14 @@ void MsgPlayer::MergeFrom(const MsgPlayer& from) {
 }
 
 void MsgPlayer::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:fluyii_game.MsgPlayer)
+// @@protoc_insertion_point(generalized_copy_from_start:MsgPlayer)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MsgPlayer::CopyFrom(const MsgPlayer& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fluyii_game.MsgPlayer)
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgPlayer)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -667,7 +663,7 @@ class MsgFriend::_Internal {
 MsgFriend::MsgFriend()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:fluyii_game.MsgFriend)
+  // @@protoc_insertion_point(constructor:MsgFriend)
 }
 MsgFriend::MsgFriend(const MsgFriend& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -677,7 +673,7 @@ MsgFriend::MsgFriend(const MsgFriend& from)
   ::memcpy(&friend_intimate_, &from.friend_intimate_,
     static_cast<size_t>(reinterpret_cast<char*>(&lv_) -
     reinterpret_cast<char*>(&friend_intimate_)) + sizeof(lv_));
-  // @@protoc_insertion_point(copy_constructor:fluyii_game.MsgFriend)
+  // @@protoc_insertion_point(copy_constructor:MsgFriend)
 }
 
 void MsgFriend::SharedCtor() {
@@ -687,7 +683,7 @@ void MsgFriend::SharedCtor() {
 }
 
 MsgFriend::~MsgFriend() {
-  // @@protoc_insertion_point(destructor:fluyii_game.MsgFriend)
+  // @@protoc_insertion_point(destructor:MsgFriend)
   SharedDtor();
 }
 
@@ -704,7 +700,7 @@ const MsgFriend& MsgFriend::default_instance() {
 
 
 void MsgFriend::Clear() {
-// @@protoc_insertion_point(message_clear_start:fluyii_game.MsgFriend)
+// @@protoc_insertion_point(message_clear_start:MsgFriend)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -766,7 +762,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* MsgFriend::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fluyii_game.MsgFriend)
+  // @@protoc_insertion_point(serialize_to_array_start:MsgFriend)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -787,12 +783,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fluyii_game.MsgFriend)
+  // @@protoc_insertion_point(serialize_to_array_end:MsgFriend)
   return target;
 }
 
 size_t MsgFriend::RequiredFieldsByteSizeFallback() const {
-// @@protoc_insertion_point(required_fields_byte_size_fallback_start:fluyii_game.MsgFriend)
+// @@protoc_insertion_point(required_fields_byte_size_fallback_start:MsgFriend)
   size_t total_size = 0;
 
   if (has_friend_intimate()) {
@@ -812,7 +808,7 @@ size_t MsgFriend::RequiredFieldsByteSizeFallback() const {
   return total_size;
 }
 size_t MsgFriend::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fluyii_game.MsgFriend)
+// @@protoc_insertion_point(message_byte_size_start:MsgFriend)
   size_t total_size = 0;
 
   if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
@@ -843,22 +839,22 @@ size_t MsgFriend::ByteSizeLong() const {
 }
 
 void MsgFriend::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:fluyii_game.MsgFriend)
+// @@protoc_insertion_point(generalized_merge_from_start:MsgFriend)
   GOOGLE_DCHECK_NE(&from, this);
   const MsgFriend* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgFriend>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:fluyii_game.MsgFriend)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgFriend)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:fluyii_game.MsgFriend)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgFriend)
     MergeFrom(*source);
   }
 }
 
 void MsgFriend::MergeFrom(const MsgFriend& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:fluyii_game.MsgFriend)
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgFriend)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -877,14 +873,14 @@ void MsgFriend::MergeFrom(const MsgFriend& from) {
 }
 
 void MsgFriend::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:fluyii_game.MsgFriend)
+// @@protoc_insertion_point(generalized_copy_from_start:MsgFriend)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MsgFriend::CopyFrom(const MsgFriend& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fluyii_game.MsgFriend)
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgFriend)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -911,8 +907,8 @@ void MsgFriend::InternalSwap(MsgFriend* other) {
 // ===================================================================
 
 void MsgSevenResp::InitAsDefaultInstance() {
-  ::fluyii_game::_MsgSevenResp_default_instance_._instance.get_mutable()->friend__ = const_cast< ::fluyii_game::MsgFriend*>(
-      ::fluyii_game::MsgFriend::internal_default_instance());
+  ::_MsgSevenResp_default_instance_._instance.get_mutable()->friend__ = const_cast< ::MsgFriend*>(
+      ::MsgFriend::internal_default_instance());
 }
 class MsgSevenResp::_Internal {
  public:
@@ -923,7 +919,7 @@ class MsgSevenResp::_Internal {
   static void set_has_player_name(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static const ::fluyii_game::MsgFriend& friend_(const MsgSevenResp* msg);
+  static const ::MsgFriend& friend_(const MsgSevenResp* msg);
   static void set_has_friend_(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
@@ -932,14 +928,14 @@ class MsgSevenResp::_Internal {
   }
 };
 
-const ::fluyii_game::MsgFriend&
+const ::MsgFriend&
 MsgSevenResp::_Internal::friend_(const MsgSevenResp* msg) {
   return *msg->friend__;
 }
 MsgSevenResp::MsgSevenResp()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:fluyii_game.MsgSevenResp)
+  // @@protoc_insertion_point(constructor:MsgSevenResp)
 }
 MsgSevenResp::MsgSevenResp(const MsgSevenResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -953,14 +949,14 @@ MsgSevenResp::MsgSevenResp(const MsgSevenResp& from)
     player_name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.player_name_);
   }
   if (from._internal_has_friend_()) {
-    friend__ = new ::fluyii_game::MsgFriend(*from.friend__);
+    friend__ = new ::MsgFriend(*from.friend__);
   } else {
     friend__ = nullptr;
   }
   ::memcpy(&money_, &from.money_,
     static_cast<size_t>(reinterpret_cast<char*>(&player_id_) -
     reinterpret_cast<char*>(&money_)) + sizeof(player_id_));
-  // @@protoc_insertion_point(copy_constructor:fluyii_game.MsgSevenResp)
+  // @@protoc_insertion_point(copy_constructor:MsgSevenResp)
 }
 
 void MsgSevenResp::SharedCtor() {
@@ -972,7 +968,7 @@ void MsgSevenResp::SharedCtor() {
 }
 
 MsgSevenResp::~MsgSevenResp() {
-  // @@protoc_insertion_point(destructor:fluyii_game.MsgSevenResp)
+  // @@protoc_insertion_point(destructor:MsgSevenResp)
   SharedDtor();
 }
 
@@ -991,7 +987,7 @@ const MsgSevenResp& MsgSevenResp::default_instance() {
 
 
 void MsgSevenResp::Clear() {
-// @@protoc_insertion_point(message_clear_start:fluyii_game.MsgSevenResp)
+// @@protoc_insertion_point(message_clear_start:MsgSevenResp)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1036,7 +1032,7 @@ const char* MsgSevenResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
       // required string player_name = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(_internal_mutable_player_name(), ptr, ctx, "fluyii_game.MsgSevenResp.player_name");
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(_internal_mutable_player_name(), ptr, ctx, "MsgSevenResp.player_name");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1055,7 +1051,7 @@ const char* MsgSevenResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .fluyii_game.MsgPlayer others = 4;
+      // repeated .MsgPlayer others = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr -= 1;
@@ -1067,7 +1063,7 @@ const char* MsgSevenResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
         } else goto handle_unusual;
         continue;
-      // required .fluyii_game.MsgFriend friend = 5;
+      // required .MsgFriend friend = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_friend_(), ptr);
@@ -1105,7 +1101,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* MsgSevenResp::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fluyii_game.MsgSevenResp)
+  // @@protoc_insertion_point(serialize_to_array_start:MsgSevenResp)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1121,7 +1117,7 @@ failure:
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
       this->_internal_player_name().data(), static_cast<int>(this->_internal_player_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "fluyii_game.MsgSevenResp.player_name");
+      "MsgSevenResp.player_name");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_player_name(), target);
   }
@@ -1132,7 +1128,7 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_records(i), target);
   }
 
-  // repeated .fluyii_game.MsgPlayer others = 4;
+  // repeated .MsgPlayer others = 4;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_others_size()); i < n; i++) {
     stream->EnsureSpace(&target);
@@ -1140,7 +1136,7 @@ failure:
       InternalWriteMessageToArray(4, this->_internal_others(i), target, stream);
   }
 
-  // required .fluyii_game.MsgFriend friend = 5;
+  // required .MsgFriend friend = 5;
   if (cached_has_bits & 0x00000002u) {
     stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -1158,12 +1154,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fluyii_game.MsgSevenResp)
+  // @@protoc_insertion_point(serialize_to_array_end:MsgSevenResp)
   return target;
 }
 
 size_t MsgSevenResp::RequiredFieldsByteSizeFallback() const {
-// @@protoc_insertion_point(required_fields_byte_size_fallback_start:fluyii_game.MsgSevenResp)
+// @@protoc_insertion_point(required_fields_byte_size_fallback_start:MsgSevenResp)
   size_t total_size = 0;
 
   if (has_player_name()) {
@@ -1174,7 +1170,7 @@ size_t MsgSevenResp::RequiredFieldsByteSizeFallback() const {
   }
 
   if (has_friend_()) {
-    // required .fluyii_game.MsgFriend friend = 5;
+    // required .MsgFriend friend = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *friend__);
@@ -1195,7 +1191,7 @@ size_t MsgSevenResp::RequiredFieldsByteSizeFallback() const {
   return total_size;
 }
 size_t MsgSevenResp::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fluyii_game.MsgSevenResp)
+// @@protoc_insertion_point(message_byte_size_start:MsgSevenResp)
   size_t total_size = 0;
 
   if (((_has_bits_[0] & 0x0000000f) ^ 0x0000000f) == 0) {  // All required fields are present.
@@ -1204,7 +1200,7 @@ size_t MsgSevenResp::ByteSizeLong() const {
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_player_name());
 
-    // required .fluyii_game.MsgFriend friend = 5;
+    // required .MsgFriend friend = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *friend__);
@@ -1233,7 +1229,7 @@ size_t MsgSevenResp::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // repeated .fluyii_game.MsgPlayer others = 4;
+  // repeated .MsgPlayer others = 4;
   total_size += 1UL * this->_internal_others_size();
   for (const auto& msg : this->others_) {
     total_size +=
@@ -1250,22 +1246,22 @@ size_t MsgSevenResp::ByteSizeLong() const {
 }
 
 void MsgSevenResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:fluyii_game.MsgSevenResp)
+// @@protoc_insertion_point(generalized_merge_from_start:MsgSevenResp)
   GOOGLE_DCHECK_NE(&from, this);
   const MsgSevenResp* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgSevenResp>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:fluyii_game.MsgSevenResp)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgSevenResp)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:fluyii_game.MsgSevenResp)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgSevenResp)
     MergeFrom(*source);
   }
 }
 
 void MsgSevenResp::MergeFrom(const MsgSevenResp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:fluyii_game.MsgSevenResp)
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgSevenResp)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1280,7 +1276,7 @@ void MsgSevenResp::MergeFrom(const MsgSevenResp& from) {
       player_name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.player_name_);
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_friend_()->::fluyii_game::MsgFriend::MergeFrom(from._internal_friend_());
+      _internal_mutable_friend_()->::MsgFriend::MergeFrom(from._internal_friend_());
     }
     if (cached_has_bits & 0x00000004u) {
       money_ = from.money_;
@@ -1293,14 +1289,14 @@ void MsgSevenResp::MergeFrom(const MsgSevenResp& from) {
 }
 
 void MsgSevenResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:fluyii_game.MsgSevenResp)
+// @@protoc_insertion_point(generalized_copy_from_start:MsgSevenResp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MsgSevenResp::CopyFrom(const MsgSevenResp& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fluyii_game.MsgSevenResp)
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgSevenResp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1334,19 +1330,18 @@ void MsgSevenResp::InternalSwap(MsgSevenResp* other) {
 
 
 // @@protoc_insertion_point(namespace_scope)
-}  // namespace fluyii_game
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::fluyii_game::MsgInt64List* Arena::CreateMaybeMessage< ::fluyii_game::MsgInt64List >(Arena* arena) {
-  return Arena::CreateInternal< ::fluyii_game::MsgInt64List >(arena);
+template<> PROTOBUF_NOINLINE ::MsgInt64List* Arena::CreateMaybeMessage< ::MsgInt64List >(Arena* arena) {
+  return Arena::CreateInternal< ::MsgInt64List >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fluyii_game::MsgPlayer* Arena::CreateMaybeMessage< ::fluyii_game::MsgPlayer >(Arena* arena) {
-  return Arena::CreateInternal< ::fluyii_game::MsgPlayer >(arena);
+template<> PROTOBUF_NOINLINE ::MsgPlayer* Arena::CreateMaybeMessage< ::MsgPlayer >(Arena* arena) {
+  return Arena::CreateInternal< ::MsgPlayer >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fluyii_game::MsgFriend* Arena::CreateMaybeMessage< ::fluyii_game::MsgFriend >(Arena* arena) {
-  return Arena::CreateInternal< ::fluyii_game::MsgFriend >(arena);
+template<> PROTOBUF_NOINLINE ::MsgFriend* Arena::CreateMaybeMessage< ::MsgFriend >(Arena* arena) {
+  return Arena::CreateInternal< ::MsgFriend >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fluyii_game::MsgSevenResp* Arena::CreateMaybeMessage< ::fluyii_game::MsgSevenResp >(Arena* arena) {
-  return Arena::CreateInternal< ::fluyii_game::MsgSevenResp >(arena);
+template<> PROTOBUF_NOINLINE ::MsgSevenResp* Arena::CreateMaybeMessage< ::MsgSevenResp >(Arena* arena) {
+  return Arena::CreateInternal< ::MsgSevenResp >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

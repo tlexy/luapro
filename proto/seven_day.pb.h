@@ -54,7 +54,6 @@ struct TableStruct_seven_5fday_2eproto {
   static const ::PROTOBUF_NAMESPACE_ID::uint32 offsets[];
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_seven_5fday_2eproto;
-namespace fluyii_game {
 class MsgFriend;
 class MsgFriendDefaultTypeInternal;
 extern MsgFriendDefaultTypeInternal _MsgFriend_default_instance_;
@@ -67,19 +66,17 @@ extern MsgPlayerDefaultTypeInternal _MsgPlayer_default_instance_;
 class MsgSevenResp;
 class MsgSevenRespDefaultTypeInternal;
 extern MsgSevenRespDefaultTypeInternal _MsgSevenResp_default_instance_;
-}  // namespace fluyii_game
 PROTOBUF_NAMESPACE_OPEN
-template<> ::fluyii_game::MsgFriend* Arena::CreateMaybeMessage<::fluyii_game::MsgFriend>(Arena*);
-template<> ::fluyii_game::MsgInt64List* Arena::CreateMaybeMessage<::fluyii_game::MsgInt64List>(Arena*);
-template<> ::fluyii_game::MsgPlayer* Arena::CreateMaybeMessage<::fluyii_game::MsgPlayer>(Arena*);
-template<> ::fluyii_game::MsgSevenResp* Arena::CreateMaybeMessage<::fluyii_game::MsgSevenResp>(Arena*);
+template<> ::MsgFriend* Arena::CreateMaybeMessage<::MsgFriend>(Arena*);
+template<> ::MsgInt64List* Arena::CreateMaybeMessage<::MsgInt64List>(Arena*);
+template<> ::MsgPlayer* Arena::CreateMaybeMessage<::MsgPlayer>(Arena*);
+template<> ::MsgSevenResp* Arena::CreateMaybeMessage<::MsgSevenResp>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
-namespace fluyii_game {
 
 // ===================================================================
 
 class MsgInt64List :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fluyii_game.MsgInt64List) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgInt64List) */ {
  public:
   MsgInt64List();
   virtual ~MsgInt64List();
@@ -166,7 +163,7 @@ class MsgInt64List :
   void InternalSwap(MsgInt64List* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fluyii_game.MsgInt64List";
+    return "MsgInt64List";
   }
   private:
   inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
@@ -215,7 +212,7 @@ class MsgInt64List :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
       mutable_ids();
 
-  // @@protoc_insertion_point(class_scope:fluyii_game.MsgInt64List)
+  // @@protoc_insertion_point(class_scope:MsgInt64List)
  private:
   class _Internal;
 
@@ -228,7 +225,7 @@ class MsgInt64List :
 // -------------------------------------------------------------------
 
 class MsgPlayer :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fluyii_game.MsgPlayer) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgPlayer) */ {
  public:
   MsgPlayer();
   virtual ~MsgPlayer();
@@ -315,7 +312,7 @@ class MsgPlayer :
   void InternalSwap(MsgPlayer* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fluyii_game.MsgPlayer";
+    return "MsgPlayer";
   }
   private:
   inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
@@ -376,7 +373,7 @@ class MsgPlayer :
   void _internal_set_player_id(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:fluyii_game.MsgPlayer)
+  // @@protoc_insertion_point(class_scope:MsgPlayer)
  private:
   class _Internal;
 
@@ -393,7 +390,7 @@ class MsgPlayer :
 // -------------------------------------------------------------------
 
 class MsgFriend :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fluyii_game.MsgFriend) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgFriend) */ {
  public:
   MsgFriend();
   virtual ~MsgFriend();
@@ -480,7 +477,7 @@ class MsgFriend :
   void InternalSwap(MsgFriend* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fluyii_game.MsgFriend";
+    return "MsgFriend";
   }
   private:
   inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
@@ -534,7 +531,7 @@ class MsgFriend :
   void _internal_set_lv(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:fluyii_game.MsgFriend)
+  // @@protoc_insertion_point(class_scope:MsgFriend)
  private:
   class _Internal;
 
@@ -551,7 +548,7 @@ class MsgFriend :
 // -------------------------------------------------------------------
 
 class MsgSevenResp :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fluyii_game.MsgSevenResp) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgSevenResp) */ {
  public:
   MsgSevenResp();
   virtual ~MsgSevenResp();
@@ -638,7 +635,7 @@ class MsgSevenResp :
   void InternalSwap(MsgSevenResp* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fluyii_game.MsgSevenResp";
+    return "MsgSevenResp";
   }
   private:
   inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
@@ -692,22 +689,22 @@ class MsgSevenResp :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_records();
 
-  // repeated .fluyii_game.MsgPlayer others = 4;
+  // repeated .MsgPlayer others = 4;
   int others_size() const;
   private:
   int _internal_others_size() const;
   public:
   void clear_others();
-  ::fluyii_game::MsgPlayer* mutable_others(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fluyii_game::MsgPlayer >*
+  ::MsgPlayer* mutable_others(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPlayer >*
       mutable_others();
   private:
-  const ::fluyii_game::MsgPlayer& _internal_others(int index) const;
-  ::fluyii_game::MsgPlayer* _internal_add_others();
+  const ::MsgPlayer& _internal_others(int index) const;
+  ::MsgPlayer* _internal_add_others();
   public:
-  const ::fluyii_game::MsgPlayer& others(int index) const;
-  ::fluyii_game::MsgPlayer* add_others();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fluyii_game::MsgPlayer >&
+  const ::MsgPlayer& others(int index) const;
+  ::MsgPlayer* add_others();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPlayer >&
       others() const;
 
   // required string player_name = 2;
@@ -730,19 +727,19 @@ class MsgSevenResp :
   std::string* _internal_mutable_player_name();
   public:
 
-  // required .fluyii_game.MsgFriend friend = 5;
+  // required .MsgFriend friend = 5;
   bool has_friend_() const;
   private:
   bool _internal_has_friend_() const;
   public:
   void clear_friend_();
-  const ::fluyii_game::MsgFriend& friend_() const;
-  ::fluyii_game::MsgFriend* release_friend_();
-  ::fluyii_game::MsgFriend* mutable_friend_();
-  void set_allocated_friend_(::fluyii_game::MsgFriend* friend_);
+  const ::MsgFriend& friend_() const;
+  ::MsgFriend* release_friend_();
+  ::MsgFriend* mutable_friend_();
+  void set_allocated_friend_(::MsgFriend* friend_);
   private:
-  const ::fluyii_game::MsgFriend& _internal_friend_() const;
-  ::fluyii_game::MsgFriend* _internal_mutable_friend_();
+  const ::MsgFriend& _internal_friend_() const;
+  ::MsgFriend* _internal_mutable_friend_();
   public:
 
   // required double money = 6;
@@ -771,7 +768,7 @@ class MsgSevenResp :
   void _internal_set_player_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:fluyii_game.MsgSevenResp)
+  // @@protoc_insertion_point(class_scope:MsgSevenResp)
  private:
   class _Internal;
 
@@ -782,9 +779,9 @@ class MsgSevenResp :
   ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > records_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fluyii_game::MsgPlayer > others_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPlayer > others_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr player_name_;
-  ::fluyii_game::MsgFriend* friend__;
+  ::MsgFriend* friend__;
   double money_;
   ::PROTOBUF_NAMESPACE_ID::int32 player_id_;
   friend struct ::TableStruct_seven_5fday_2eproto;
@@ -814,19 +811,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int64 MsgInt64List::_internal_ids(int index) con
   return ids_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 MsgInt64List::ids(int index) const {
-  // @@protoc_insertion_point(field_get:fluyii_game.MsgInt64List.ids)
+  // @@protoc_insertion_point(field_get:MsgInt64List.ids)
   return _internal_ids(index);
 }
 inline void MsgInt64List::set_ids(int index, ::PROTOBUF_NAMESPACE_ID::int64 value) {
   ids_.Set(index, value);
-  // @@protoc_insertion_point(field_set:fluyii_game.MsgInt64List.ids)
+  // @@protoc_insertion_point(field_set:MsgInt64List.ids)
 }
 inline void MsgInt64List::_internal_add_ids(::PROTOBUF_NAMESPACE_ID::int64 value) {
   ids_.Add(value);
 }
 inline void MsgInt64List::add_ids(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_add_ids(value);
-  // @@protoc_insertion_point(field_add:fluyii_game.MsgInt64List.ids)
+  // @@protoc_insertion_point(field_add:MsgInt64List.ids)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
 MsgInt64List::_internal_ids() const {
@@ -834,7 +831,7 @@ MsgInt64List::_internal_ids() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
 MsgInt64List::ids() const {
-  // @@protoc_insertion_point(field_list:fluyii_game.MsgInt64List.ids)
+  // @@protoc_insertion_point(field_list:MsgInt64List.ids)
   return _internal_ids();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
@@ -843,7 +840,7 @@ MsgInt64List::_internal_mutable_ids() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
 MsgInt64List::mutable_ids() {
-  // @@protoc_insertion_point(field_mutable_list:fluyii_game.MsgInt64List.ids)
+  // @@protoc_insertion_point(field_mutable_list:MsgInt64List.ids)
   return _internal_mutable_ids();
 }
 
@@ -867,7 +864,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int64 MsgPlayer::_internal_player_id() const {
   return player_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 MsgPlayer::player_id() const {
-  // @@protoc_insertion_point(field_get:fluyii_game.MsgPlayer.player_id)
+  // @@protoc_insertion_point(field_get:MsgPlayer.player_id)
   return _internal_player_id();
 }
 inline void MsgPlayer::_internal_set_player_id(::PROTOBUF_NAMESPACE_ID::int64 value) {
@@ -876,7 +873,7 @@ inline void MsgPlayer::_internal_set_player_id(::PROTOBUF_NAMESPACE_ID::int64 va
 }
 inline void MsgPlayer::set_player_id(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_player_id(value);
-  // @@protoc_insertion_point(field_set:fluyii_game.MsgPlayer.player_id)
+  // @@protoc_insertion_point(field_set:MsgPlayer.player_id)
 }
 
 // required string player_name = 2;
@@ -892,15 +889,15 @@ inline void MsgPlayer::clear_player_name() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& MsgPlayer::player_name() const {
-  // @@protoc_insertion_point(field_get:fluyii_game.MsgPlayer.player_name)
+  // @@protoc_insertion_point(field_get:MsgPlayer.player_name)
   return _internal_player_name();
 }
 inline void MsgPlayer::set_player_name(const std::string& value) {
   _internal_set_player_name(value);
-  // @@protoc_insertion_point(field_set:fluyii_game.MsgPlayer.player_name)
+  // @@protoc_insertion_point(field_set:MsgPlayer.player_name)
 }
 inline std::string* MsgPlayer::mutable_player_name() {
-  // @@protoc_insertion_point(field_mutable:fluyii_game.MsgPlayer.player_name)
+  // @@protoc_insertion_point(field_mutable:MsgPlayer.player_name)
   return _internal_mutable_player_name();
 }
 inline const std::string& MsgPlayer::_internal_player_name() const {
@@ -914,26 +911,26 @@ inline void MsgPlayer::set_player_name(std::string&& value) {
   _has_bits_[0] |= 0x00000001u;
   player_name_.SetNoArena(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:fluyii_game.MsgPlayer.player_name)
+  // @@protoc_insertion_point(field_set_rvalue:MsgPlayer.player_name)
 }
 inline void MsgPlayer::set_player_name(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   _has_bits_[0] |= 0x00000001u;
   player_name_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:fluyii_game.MsgPlayer.player_name)
+  // @@protoc_insertion_point(field_set_char:MsgPlayer.player_name)
 }
 inline void MsgPlayer::set_player_name(const char* value, size_t size) {
   _has_bits_[0] |= 0x00000001u;
   player_name_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:fluyii_game.MsgPlayer.player_name)
+  // @@protoc_insertion_point(field_set_pointer:MsgPlayer.player_name)
 }
 inline std::string* MsgPlayer::_internal_mutable_player_name() {
   _has_bits_[0] |= 0x00000001u;
   return player_name_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 inline std::string* MsgPlayer::release_player_name() {
-  // @@protoc_insertion_point(field_release:fluyii_game.MsgPlayer.player_name)
+  // @@protoc_insertion_point(field_release:MsgPlayer.player_name)
   if (!has_player_name()) {
     return nullptr;
   }
@@ -947,7 +944,7 @@ inline void MsgPlayer::set_allocated_player_name(std::string* player_name) {
     _has_bits_[0] &= ~0x00000001u;
   }
   player_name_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), player_name);
-  // @@protoc_insertion_point(field_set_allocated:fluyii_game.MsgPlayer.player_name)
+  // @@protoc_insertion_point(field_set_allocated:MsgPlayer.player_name)
 }
 
 // -------------------------------------------------------------------
@@ -970,7 +967,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 MsgFriend::_internal_friend_intimate() con
   return friend_intimate_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 MsgFriend::friend_intimate() const {
-  // @@protoc_insertion_point(field_get:fluyii_game.MsgFriend.friend_intimate)
+  // @@protoc_insertion_point(field_get:MsgFriend.friend_intimate)
   return _internal_friend_intimate();
 }
 inline void MsgFriend::_internal_set_friend_intimate(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -979,7 +976,7 @@ inline void MsgFriend::_internal_set_friend_intimate(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void MsgFriend::set_friend_intimate(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_friend_intimate(value);
-  // @@protoc_insertion_point(field_set:fluyii_game.MsgFriend.friend_intimate)
+  // @@protoc_insertion_point(field_set:MsgFriend.friend_intimate)
 }
 
 // required int32 lv = 2;
@@ -998,7 +995,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 MsgFriend::_internal_lv() const {
   return lv_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 MsgFriend::lv() const {
-  // @@protoc_insertion_point(field_get:fluyii_game.MsgFriend.lv)
+  // @@protoc_insertion_point(field_get:MsgFriend.lv)
   return _internal_lv();
 }
 inline void MsgFriend::_internal_set_lv(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1007,7 +1004,7 @@ inline void MsgFriend::_internal_set_lv(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void MsgFriend::set_lv(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_lv(value);
-  // @@protoc_insertion_point(field_set:fluyii_game.MsgFriend.lv)
+  // @@protoc_insertion_point(field_set:MsgFriend.lv)
 }
 
 // -------------------------------------------------------------------
@@ -1030,7 +1027,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSevenResp::_internal_player_id() const 
   return player_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSevenResp::player_id() const {
-  // @@protoc_insertion_point(field_get:fluyii_game.MsgSevenResp.player_id)
+  // @@protoc_insertion_point(field_get:MsgSevenResp.player_id)
   return _internal_player_id();
 }
 inline void MsgSevenResp::_internal_set_player_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1039,7 +1036,7 @@ inline void MsgSevenResp::_internal_set_player_id(::PROTOBUF_NAMESPACE_ID::int32
 }
 inline void MsgSevenResp::set_player_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_player_id(value);
-  // @@protoc_insertion_point(field_set:fluyii_game.MsgSevenResp.player_id)
+  // @@protoc_insertion_point(field_set:MsgSevenResp.player_id)
 }
 
 // required string player_name = 2;
@@ -1055,15 +1052,15 @@ inline void MsgSevenResp::clear_player_name() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& MsgSevenResp::player_name() const {
-  // @@protoc_insertion_point(field_get:fluyii_game.MsgSevenResp.player_name)
+  // @@protoc_insertion_point(field_get:MsgSevenResp.player_name)
   return _internal_player_name();
 }
 inline void MsgSevenResp::set_player_name(const std::string& value) {
   _internal_set_player_name(value);
-  // @@protoc_insertion_point(field_set:fluyii_game.MsgSevenResp.player_name)
+  // @@protoc_insertion_point(field_set:MsgSevenResp.player_name)
 }
 inline std::string* MsgSevenResp::mutable_player_name() {
-  // @@protoc_insertion_point(field_mutable:fluyii_game.MsgSevenResp.player_name)
+  // @@protoc_insertion_point(field_mutable:MsgSevenResp.player_name)
   return _internal_mutable_player_name();
 }
 inline const std::string& MsgSevenResp::_internal_player_name() const {
@@ -1077,26 +1074,26 @@ inline void MsgSevenResp::set_player_name(std::string&& value) {
   _has_bits_[0] |= 0x00000001u;
   player_name_.SetNoArena(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:fluyii_game.MsgSevenResp.player_name)
+  // @@protoc_insertion_point(field_set_rvalue:MsgSevenResp.player_name)
 }
 inline void MsgSevenResp::set_player_name(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   _has_bits_[0] |= 0x00000001u;
   player_name_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:fluyii_game.MsgSevenResp.player_name)
+  // @@protoc_insertion_point(field_set_char:MsgSevenResp.player_name)
 }
 inline void MsgSevenResp::set_player_name(const char* value, size_t size) {
   _has_bits_[0] |= 0x00000001u;
   player_name_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:fluyii_game.MsgSevenResp.player_name)
+  // @@protoc_insertion_point(field_set_pointer:MsgSevenResp.player_name)
 }
 inline std::string* MsgSevenResp::_internal_mutable_player_name() {
   _has_bits_[0] |= 0x00000001u;
   return player_name_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 inline std::string* MsgSevenResp::release_player_name() {
-  // @@protoc_insertion_point(field_release:fluyii_game.MsgSevenResp.player_name)
+  // @@protoc_insertion_point(field_release:MsgSevenResp.player_name)
   if (!has_player_name()) {
     return nullptr;
   }
@@ -1110,7 +1107,7 @@ inline void MsgSevenResp::set_allocated_player_name(std::string* player_name) {
     _has_bits_[0] &= ~0x00000001u;
   }
   player_name_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), player_name);
-  // @@protoc_insertion_point(field_set_allocated:fluyii_game.MsgSevenResp.player_name)
+  // @@protoc_insertion_point(field_set_allocated:MsgSevenResp.player_name)
 }
 
 // repeated int32 records = 3;
@@ -1127,19 +1124,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSevenResp::_internal_records(int index)
   return records_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSevenResp::records(int index) const {
-  // @@protoc_insertion_point(field_get:fluyii_game.MsgSevenResp.records)
+  // @@protoc_insertion_point(field_get:MsgSevenResp.records)
   return _internal_records(index);
 }
 inline void MsgSevenResp::set_records(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   records_.Set(index, value);
-  // @@protoc_insertion_point(field_set:fluyii_game.MsgSevenResp.records)
+  // @@protoc_insertion_point(field_set:MsgSevenResp.records)
 }
 inline void MsgSevenResp::_internal_add_records(::PROTOBUF_NAMESPACE_ID::int32 value) {
   records_.Add(value);
 }
 inline void MsgSevenResp::add_records(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_records(value);
-  // @@protoc_insertion_point(field_add:fluyii_game.MsgSevenResp.records)
+  // @@protoc_insertion_point(field_add:MsgSevenResp.records)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 MsgSevenResp::_internal_records() const {
@@ -1147,7 +1144,7 @@ MsgSevenResp::_internal_records() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 MsgSevenResp::records() const {
-  // @@protoc_insertion_point(field_list:fluyii_game.MsgSevenResp.records)
+  // @@protoc_insertion_point(field_list:MsgSevenResp.records)
   return _internal_records();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -1156,11 +1153,11 @@ MsgSevenResp::_internal_mutable_records() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 MsgSevenResp::mutable_records() {
-  // @@protoc_insertion_point(field_mutable_list:fluyii_game.MsgSevenResp.records)
+  // @@protoc_insertion_point(field_mutable_list:MsgSevenResp.records)
   return _internal_mutable_records();
 }
 
-// repeated .fluyii_game.MsgPlayer others = 4;
+// repeated .MsgPlayer others = 4;
 inline int MsgSevenResp::_internal_others_size() const {
   return others_.size();
 }
@@ -1170,36 +1167,36 @@ inline int MsgSevenResp::others_size() const {
 inline void MsgSevenResp::clear_others() {
   others_.Clear();
 }
-inline ::fluyii_game::MsgPlayer* MsgSevenResp::mutable_others(int index) {
-  // @@protoc_insertion_point(field_mutable:fluyii_game.MsgSevenResp.others)
+inline ::MsgPlayer* MsgSevenResp::mutable_others(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgSevenResp.others)
   return others_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fluyii_game::MsgPlayer >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPlayer >*
 MsgSevenResp::mutable_others() {
-  // @@protoc_insertion_point(field_mutable_list:fluyii_game.MsgSevenResp.others)
+  // @@protoc_insertion_point(field_mutable_list:MsgSevenResp.others)
   return &others_;
 }
-inline const ::fluyii_game::MsgPlayer& MsgSevenResp::_internal_others(int index) const {
+inline const ::MsgPlayer& MsgSevenResp::_internal_others(int index) const {
   return others_.Get(index);
 }
-inline const ::fluyii_game::MsgPlayer& MsgSevenResp::others(int index) const {
-  // @@protoc_insertion_point(field_get:fluyii_game.MsgSevenResp.others)
+inline const ::MsgPlayer& MsgSevenResp::others(int index) const {
+  // @@protoc_insertion_point(field_get:MsgSevenResp.others)
   return _internal_others(index);
 }
-inline ::fluyii_game::MsgPlayer* MsgSevenResp::_internal_add_others() {
+inline ::MsgPlayer* MsgSevenResp::_internal_add_others() {
   return others_.Add();
 }
-inline ::fluyii_game::MsgPlayer* MsgSevenResp::add_others() {
-  // @@protoc_insertion_point(field_add:fluyii_game.MsgSevenResp.others)
+inline ::MsgPlayer* MsgSevenResp::add_others() {
+  // @@protoc_insertion_point(field_add:MsgSevenResp.others)
   return _internal_add_others();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fluyii_game::MsgPlayer >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPlayer >&
 MsgSevenResp::others() const {
-  // @@protoc_insertion_point(field_list:fluyii_game.MsgSevenResp.others)
+  // @@protoc_insertion_point(field_list:MsgSevenResp.others)
   return others_;
 }
 
-// required .fluyii_game.MsgFriend friend = 5;
+// required .MsgFriend friend = 5;
 inline bool MsgSevenResp::_internal_has_friend_() const {
   bool value = (_has_bits_[0] & 0x00000002u) != 0;
   PROTOBUF_ASSUME(!value || friend__ != nullptr);
@@ -1212,35 +1209,35 @@ inline void MsgSevenResp::clear_friend_() {
   if (friend__ != nullptr) friend__->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-inline const ::fluyii_game::MsgFriend& MsgSevenResp::_internal_friend_() const {
-  const ::fluyii_game::MsgFriend* p = friend__;
-  return p != nullptr ? *p : *reinterpret_cast<const ::fluyii_game::MsgFriend*>(
-      &::fluyii_game::_MsgFriend_default_instance_);
+inline const ::MsgFriend& MsgSevenResp::_internal_friend_() const {
+  const ::MsgFriend* p = friend__;
+  return p != nullptr ? *p : *reinterpret_cast<const ::MsgFriend*>(
+      &::_MsgFriend_default_instance_);
 }
-inline const ::fluyii_game::MsgFriend& MsgSevenResp::friend_() const {
-  // @@protoc_insertion_point(field_get:fluyii_game.MsgSevenResp.friend)
+inline const ::MsgFriend& MsgSevenResp::friend_() const {
+  // @@protoc_insertion_point(field_get:MsgSevenResp.friend)
   return _internal_friend_();
 }
-inline ::fluyii_game::MsgFriend* MsgSevenResp::release_friend_() {
-  // @@protoc_insertion_point(field_release:fluyii_game.MsgSevenResp.friend)
+inline ::MsgFriend* MsgSevenResp::release_friend_() {
+  // @@protoc_insertion_point(field_release:MsgSevenResp.friend)
   _has_bits_[0] &= ~0x00000002u;
-  ::fluyii_game::MsgFriend* temp = friend__;
+  ::MsgFriend* temp = friend__;
   friend__ = nullptr;
   return temp;
 }
-inline ::fluyii_game::MsgFriend* MsgSevenResp::_internal_mutable_friend_() {
+inline ::MsgFriend* MsgSevenResp::_internal_mutable_friend_() {
   _has_bits_[0] |= 0x00000002u;
   if (friend__ == nullptr) {
-    auto* p = CreateMaybeMessage<::fluyii_game::MsgFriend>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::MsgFriend>(GetArenaNoVirtual());
     friend__ = p;
   }
   return friend__;
 }
-inline ::fluyii_game::MsgFriend* MsgSevenResp::mutable_friend_() {
-  // @@protoc_insertion_point(field_mutable:fluyii_game.MsgSevenResp.friend)
+inline ::MsgFriend* MsgSevenResp::mutable_friend_() {
+  // @@protoc_insertion_point(field_mutable:MsgSevenResp.friend)
   return _internal_mutable_friend_();
 }
-inline void MsgSevenResp::set_allocated_friend_(::fluyii_game::MsgFriend* friend_) {
+inline void MsgSevenResp::set_allocated_friend_(::MsgFriend* friend_) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete friend__;
@@ -1256,7 +1253,7 @@ inline void MsgSevenResp::set_allocated_friend_(::fluyii_game::MsgFriend* friend
     _has_bits_[0] &= ~0x00000002u;
   }
   friend__ = friend_;
-  // @@protoc_insertion_point(field_set_allocated:fluyii_game.MsgSevenResp.friend)
+  // @@protoc_insertion_point(field_set_allocated:MsgSevenResp.friend)
 }
 
 // required double money = 6;
@@ -1275,7 +1272,7 @@ inline double MsgSevenResp::_internal_money() const {
   return money_;
 }
 inline double MsgSevenResp::money() const {
-  // @@protoc_insertion_point(field_get:fluyii_game.MsgSevenResp.money)
+  // @@protoc_insertion_point(field_get:MsgSevenResp.money)
   return _internal_money();
 }
 inline void MsgSevenResp::_internal_set_money(double value) {
@@ -1284,7 +1281,7 @@ inline void MsgSevenResp::_internal_set_money(double value) {
 }
 inline void MsgSevenResp::set_money(double value) {
   _internal_set_money(value);
-  // @@protoc_insertion_point(field_set:fluyii_game.MsgSevenResp.money)
+  // @@protoc_insertion_point(field_set:MsgSevenResp.money)
 }
 
 #ifdef __GNUC__
@@ -1299,7 +1296,6 @@ inline void MsgSevenResp::set_money(double value) {
 
 // @@protoc_insertion_point(namespace_scope)
 
-}  // namespace fluyii_game
 
 // @@protoc_insertion_point(global_scope)
 
