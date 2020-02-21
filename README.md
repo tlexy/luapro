@@ -72,7 +72,7 @@ expClass(AnimalDuck, "Duck", void(*)(int), lvm);//可以在lua中这样创建一
 expClassFunction(AnimalDuck, "Duck", print, "aprint", lvm);//lua中调用：d:aprint()
 
 //导出类静态方法
-expClassFunction(AnimalDuck, "Duck", name, "aname", lvm);//lua中调用：Duck.aname()
+expClassSFunction(AnimalDuck, "Duck", name, "aname", lvm);//lua中调用：Duck.aname()
 
 ```
 ### 导出类变量及常量
@@ -158,7 +158,7 @@ callLuaProtoFunction("msg_1311", &resp, lvm);
 ### 将一个lua中的table转换为protobuf消息类
 
 ### C++调用lua函数（混合参数版本）
->混合参数指的是：C++传递到lua函数中的某些自定义数据结构并没有注册
->上面的例子中，类MsgSevenResp并没有注册，而类AnimalDuck已经注册过了，
+>混合参数指的是：C++传递到lua函数中的某些自定义数据结构并没有注册。
+>在上面的例子中，类MsgSevenResp并没有注册，而类AnimalDuck已经注册过了，
 >如果lua函数中有MsgSevenResp类对象和AnimalDuck类对象作为参数时，
 >这时，为了调用的正确性，不能直接调用callLuaStdFunction来调用lua函数
