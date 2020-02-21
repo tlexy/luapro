@@ -12,6 +12,9 @@ Lua lvm = proCreate();
 
 //结束一个lua虚拟机
 proClose(lvm);
+
+//加载并执行lua代码
+proLoadLuaFile(lvm, "test1.lua");
 ```
 ### 导出C函数
 ```c++
